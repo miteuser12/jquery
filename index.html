@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    
+   <script>
+    $(function(){
+       $("#btn").click(function(){
+         $("#content").html("<h3>Welcome to jQuery...</h3>");  
+    }); 
+     
+        $("p").hover(function(){
+           $(this).css("background-color", "yellow");
+            
+     });
+      $("p").mouseleave(function(){
+           $(this).css("background-color", "white");
+            
+     });
+        
+        size=16;
+        
+      $("#plus").click(function(){
+           $("body").css("font-size", size++);
+            
+     });
+        
+      $("#minus").click(function(){
+           $("body").css("font-size", size--);
+            
+     });  
+        
+    });
+
+    </script> 
+    </head>
+<body>
+       <button id="plus">+</button>
+       <button id="minus">-</button>
+       <br>
+       <button id="btn">Click!</button> 
+       <div id="content"></div> 
+        <p>A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man.',
+            'To be happy with a man you must understand him a lot and love him a little. To be happy with a woman you must love her a lot and not try to understand her at all.',An optimist is someone who falls off the Empire State Building, and after 50 floors says, "So far so good</p>
+        <p>A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man.',
+            'To be happy with a man you must understand him a lot and love him a little. To be happy with a woman you must love her a lot and not try to understand her at all.',An optimist is someone who falls off the Empire State Building, and after 50 floors says, "So far so good</p>
+        <p>A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man.',
+            'To be happy with a man you must understand him a lot and love him a little. To be happy with a woman you must love her a lot and not try to understand her at all.',An optimist is someone who falls off the Empire State Building, and after 50 floors says, "So far so good</p>
+        
+    </body>
+</html>
